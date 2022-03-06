@@ -23,6 +23,17 @@ body {
   color: var(--Very-Dark-Cyan);
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  -webkit-filter: brightness(1.7);
+          filter: brightness(1.7);
+}
+
 .container {
   padding: 10px;
   min-width: 350px;
@@ -65,6 +76,7 @@ nav .nav-button {
   padding: 5px 20px;
   border: 1px solid var(--Light-Pink);
   border-radius: 3rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
@@ -72,6 +84,11 @@ nav .nav-button {
     font-size: 1rem;
     font-weight: bold;
   }
+}
+
+nav .nav-button:hover {
+  -webkit-box-shadow: 0 0 2px 2px var(--Light-Pink);
+          box-shadow: 0 0 2px 2px var(--Light-Pink);
 }
 
 main {
